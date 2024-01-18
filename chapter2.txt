@@ -1,1 +1,38 @@
 chapter2.txt
+
+remote repository on git hub
+
+git remote add <name> <url> # here name can be anything like cow ,pig but generally by convention the name "origin" is used. it is the name of the remote repository. and url of the remote repository.
+
+
+git push -u main # pushes your local repository to the remote remorepository to the main branch.
+
+git remote -v # viewing the remote repository that you have added.
+
+git branch -M main # renames the branch to main. it is a good practice.
+
+######explaining git push ###
+
+The command `git push -u origin main` is used to push the changes in your local branch named "main" to the remote repository that you've configured as "origin." Let's break down the command:
+
+- `git push`: This is the Git command used to push your local changes to a remote repository.
+
+- `-u`: This flag stands for "upstream." When you use `-u` followed by the remote name (in this case, "origin") and the branch name (in this case, "main"), you're setting up a tracking relationship between your local branch and the remote branch. This means that in the future, when you run `git push` or `git pull`, Git will automatically know which remote branch to push to or pull from.
+
+- `origin`: This is the name given to the remote repository. In Git, "origin" is a common convention for the default name of the remote repository, but you can choose a different name if you like.
+
+- `main`: This is the name of the local branch that you want to push to the remote repository. It seems you've renamed the default branch from "master" to "main," which is a common practice to use more inclusive language in software development.
+
+So, the command is telling Git to push the changes from your local "main" branch to the "main" branch in the remote repository named "origin," and it sets up tracking for future pushes and pulls.
+
+Note: If you encounter any errors like "src refspec main does not match any," it might mean that there are no commits in your local "main" branch. Ensure that you have committed changes to your branch before pushing. If you are working with a newly created repository, make sure there are commits in the branch you are trying to push.
+
+
+
+local working directory -->[git add]--> staging area -->[git commit -m " message "] --> local git repository --> [git push -u origin main] --> remote git repository 
+
+
+main branch - main branch of commits or save points
+
+
+
