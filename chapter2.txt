@@ -1,4 +1,4 @@
-chapter2.txt
+--chapter2.txt
 
 remote repository on git hub
 
