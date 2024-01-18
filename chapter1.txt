@@ -1,14 +1,22 @@
 chapter1.txt
 
+LOCALLY
+
 git init #initalize git
 
-git add {files} # add files to staging area
+git add {files} # add files to staging area. can do [git add . ] to add all files to staging.
 
-git status #shows files in staging area. files in red means that they are in that working directory but git is not tracking them.
+git status #shows files in staging area. files in red means that they are in that working directory but git is not tracking them. also some may be tracked but have changes that has not been commited.
 
-git commit -m "message" # saves the changes made to the files after adding them. use present tence to write the commit message eg complete chapter one instead of completed chapter one.
+
+
+git commit -m "message" # saves the changes made to the files after adding them. use present tense to write the commit message eg complete chapter one instead of completed chapter one. 
 
 git log #shows the commits made
+
+git checkout # revert back to the previous version of the file that was last commited to git.
+
+
 
 
 
