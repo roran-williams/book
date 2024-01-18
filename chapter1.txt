@@ -1,1 +1,14 @@
 chapter1.txt
+
+git init #initalize git
+
+git add {files} # add files to staging area
+
+git status #shows files in staging area. files in red means that they are in that working directory but git is not tracking them.
+
+git commit -m "message" # saves the changes made to the files after adding them. use present tence to write the commit message eg complete chapter one instead of completed chapter one.
+
+git log #shows the commits made
+
+
+
